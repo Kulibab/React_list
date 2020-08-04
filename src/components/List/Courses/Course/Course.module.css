@@ -1,0 +1,86 @@
+.wrap {
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.wrap div {
+    align-self: center;
+    text-align: center;
+}
+
+.date {
+    flex: 1;
+}
+
+.wrap .name {
+    flex: 2;
+    font-weight: bold;
+    text-align: start;
+}
+
+.wrap .description {
+    flex: 4;
+    text-align: start;
+}
+
+.duration {
+    flex: 1;
+}
+
+.box {
+    cursor: pointer;
+    font-size: 30px;
+    flex: 1;
+    font-weight: bold;
+    color: #aaa;
+    position: relative;
+}
+
+.menu {
+    font-size: 16px;
+    color: #000;
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    right: 20px;
+    top: 45px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 3px #bbb;
+}
+
+.wrap .menu span {
+    display: block;
+    padding: 5px 40px;
+    width: 100px;
+    text-align: left;
+}
+
+.edit::before {
+    content: '';
+    background: url('../../../../edit.svg');
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    width: 16px;
+    height: 16px;
+    opacity: 0.7;
+}
+
+.delete::before {
+    content: '';
+    background-image: url('../../../../delete.svg');
+    position: absolute;
+    display: block;
+    left: 20px;
+    top: 40px;
+    background-size: 16px 16px;
+    height: 16px;
+    width: 16px;
+    opacity: 0.7;
+}
